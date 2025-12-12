@@ -71,7 +71,16 @@
             background-color: #005582;
         }
         
-        /* New Styles for QR Section */
+        /* New Style for Save Contact Button */
+        .contact-btn.save-contact {
+            background-color: #28a745; /* Green for Action */
+            margin-top: 20px; /* Extra space to separate it */
+        }
+        .contact-btn.save-contact:hover {
+            background-color: #218838;
+        }
+
+        /* QR Section */
         .qr-section {
             margin-top: 25px;
             padding-top: 20px;
@@ -100,7 +109,7 @@
 
     <div class="card">
         <div class="profile-container">
-            <img src="Profile.png" alt="Carson Quinn" class="profile-img">
+            <img src="profile.jpg" alt="Carson Quinn" class="profile-img">
         </div>
         
         <h1>Carson Quinn</h1>
@@ -118,6 +127,10 @@
              🔗 Connect on LinkedIn
         </a>
 
+        <a href="contact.vcf" download="CarsonQuinn.vcf" class="contact-btn save-contact">
+             📥 Save to Contacts
+        </a>
+
         <div class="qr-section">
             <p class="scan-text">Scan to Share</p>
             <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://car-quinn.github.io/" alt="QR Code" class="qr-img">
@@ -130,4 +143,3 @@
 
 </body>
 </html>
-
