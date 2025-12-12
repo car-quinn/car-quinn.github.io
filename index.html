@@ -31,8 +31,8 @@
         .profile-img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* This ensures your photo isn't squished */
-            object-position: center top; /* Focuses on your face */
+            object-fit: cover;
+            object-position: center top;
             border-radius: 50%;
             border: 4px solid #fff;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -70,10 +70,29 @@
         .contact-btn.linkedin:hover {
             background-color: #005582;
         }
-        .footer {
+        
+        /* New Styles for QR Section */
+        .qr-section {
             margin-top: 25px;
-            font-size: 12px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .qr-img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+        }
+        .scan-text {
+            font-size: 10px;
             color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #ccc;
         }
     </style>
 </head>
@@ -81,11 +100,11 @@
 
     <div class="card">
         <div class="profile-container">
-            <img src="Profile.png" alt="Carson Quinn" class="profile-img">
+            <img src="profile.jpg" alt="Carson Quinn" class="profile-img">
         </div>
         
         <h1>Carson Quinn</h1>
-        <p class="title">Accounting + Private Equity</p>
+        <p class="title">Professional Profile</p>
 
         <a href="tel:5616287645" class="contact-btn">
              📞 Call: 561-628-7645
@@ -98,6 +117,11 @@
         <a href="https://www.linkedin.com/in/carsonjquinn" target="_blank" class="contact-btn linkedin">
              🔗 Connect on LinkedIn
         </a>
+
+        <div class="qr-section">
+            <p class="scan-text">Scan to Share</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://car-quinn.github.io/" alt="QR Code" class="qr-img">
+        </div>
 
         <div class="footer">
             West Palm Beach, FL
